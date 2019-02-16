@@ -12,39 +12,67 @@
 
   gtag('config', 'UA-134639206-1');
 </script>
-
+<style>
+  body{
+    margin:0;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  div.a{
+    font-size:70px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin:0;
+    padding: 20px;
+  }
+  #active{
+    color:red;
+  }
+  #grid ol{
+    font-size: 25px;
+    border-right: 1px solid gray;
+    width:100px;
+    margin:0px;
+    padding:33px;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+  }
+  p{
+    margin-right: 50px;
+  }
+  @media(max-width:800px){
+    #grid ol{
+      border-right: none;
+    }
+    #grid{
+      display: block;
+    }
+  }
+</style>
 </head>
 <body>
-  <h1><a href="index.html">WEB</a></h1>
+  <div class="a"><a href="index.html">WEB</a></div>
+  <div id="grid">
   <ol>
-    <li><a href="1.html">HTML</a></li>
+    <li><a href="1.html" id="active">HTML</a></li>
     <li><a href="2.html">CSS</a></li>
     <li><a href="3.html">JavaScript</a></li>
   </ol>
-
-  <h2>HTML</h2>
-  <p><iframe width="700" height="400" src="https://www.youtube.com/embed/7T7r_oSp0SE?list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </p>
-  <p><span style="font-size:25px"><a href="http://www.w3.org/TR/2011/WD-html5-20110405/" target="_blank" title="HTML5 specification">Hpertext Markup Language(HTML)</a> is the standard markup language for
-  <br>
-  <strong>creating <u>web</u> pages</strong> and web applications.</span></p>
-  <img src = "coding_img_1.jpg" width="600">
-
-  <table>
-    <tr>
-      <td>head</td>
-      <td>98.1</td>
-    </tr>
-    <tr>
-      <td>body</td>
-      <td>97.9</td>
-    </tr>
-    <tr>
-      <td>html</td>
-      <td>97.9</td>
-    </tr>
-  </table>
-  <p><div id="disqus_thread"></div>
+  <div>
+    <h1>HTML</h1>
+    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE?list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+    <p><span style="font-size:25px"><a href="http://www.w3.org/TR/2011/WD-html5-20110405/" target="_blank" title="HTML5 specification">Hpertext Markup Language(HTML)</a> is the standard markup language for
+    <br>
+    <strong>creating <u>web</u> pages</strong> and web applications.</span></p>
+    <img src = "coding_img_1.jpg" width="600">
+    <p><div id="disqus_thread"></div>
+  </div>
+</div>
     <script>
 
     /**
